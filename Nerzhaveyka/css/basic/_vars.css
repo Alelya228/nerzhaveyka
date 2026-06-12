@@ -1,0 +1,75 @@
+:root {
+  /* Цветовая палитра — сталь и металл */
+  --clr-steel-dark:   #0d1117;
+  --clr-steel-900:    #141b24;
+  --clr-steel-800:    #1c2636;
+  --clr-steel-700:    #243044;
+  --clr-steel-600:    #2e3f56;
+  --clr-steel-500:    #3e5268;
+  --clr-steel-400:    #5a7290;
+  --clr-steel-300:    #7d98b3;
+  --clr-steel-200:    #a8bfcf;
+  --clr-steel-100:    #d0dce6;
+  --clr-steel-50:     #edf2f7;
+
+  /* Акцентный — холодный металлический серебристо-голубой */
+  --clr-accent:       #4fc3f7;
+  --clr-accent-dark:  #0288d1;
+  --clr-accent-light: #b3e5fc;
+  --clr-accent-glow:  rgba(79, 195, 247, 0.18);
+
+  /* Вторичный акцент — нержавеющее серебро */
+  --clr-silver:       #c8d6df;
+  --clr-silver-dark:  #8fa8b8;
+
+  /* Текст */
+  --clr-text-primary:   #edf2f7;
+  --clr-text-secondary: #a8bfcf;
+  --clr-text-muted:     #5a7290;
+  --clr-text-on-accent: #0d1117;
+
+  /* Фон */
+  --clr-bg-body:    #0d1117;
+  --clr-bg-surface: #141b24;
+  --clr-bg-card:    #1c2636;
+  --clr-bg-card-hover: #243044;
+
+  /* Семантические */
+  --clr-success: #43c59e;
+  --clr-warning: #f59e0b;
+  --clr-danger:  #ef4444;
+
+  /* Границы */
+  --clr-border:       rgba(79, 195, 247, 0.15);
+  --clr-border-light: rgba(200, 214, 223, 0.12);
+  --clr-border-hover: rgba(79, 195, 247, 0.4);
+
+  /* Типографика */
+  --font-display: 'Oswald', 'Impact', sans-serif;
+  --font-body:    'Exo 2', 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* Размеры */
+  --header-height:     50px;
+  --header-height-mob: 60px;
+  --logo-width:        220px;
+  --logo-height:       48px;
+  --logo-width-mob:    160px;
+  --logo-height-mob:   36px;
+  --container-max:     1320px;
+  --container-pad:     clamp(16px, 4vw, 48px);
+
+  /* Скругления */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  /* Тени */
+  --shadow-card:   0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-accent: 0 0 24px rgba(79, 195, 247, 0.2);
+
+  /* Переходы */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in:  cubic-bezier(0.55, 0.06, 0.68, 0.19);
+  --transition: 0.25s var(--ease-out);
+}
