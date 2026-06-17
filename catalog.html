@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Каталог нержавеющего металлопроката — листы, трубы, прутки, фасонный прокат. Нержавейка Майкоп." />
+  <title>Каталог — Нержавейка Майкоп</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/catalog.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+  <header class="header" id="site-header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+
+        <!-- LOGO: NOT MODIFY -->
+        <a href="index.html" class="header__logo" aria-label="Нержавейка Майкоп — на главную">
+         <img
+              src="images/combo-logo.webp"
+              alt="logo"
+              width="220"
+              height="50"
+            />
+        </a>
+        <!-- LOGO END -->
+
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list" role="list">
+            <li class="nav__item"><a href="index.html"    class="nav__link">Главная</a></li>
+            <li class="nav__item"><a href="catalog.html"  class="nav__link nav__link_active" aria-current="page">Каталог</a></li>
+            <li class="nav__item"><a href="about.html"    class="nav__link">О компании</a></li>
+            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__cta">
+          <a href="tel:+79288816664" class="header__phone">+7 (928) 881-66-64</a>
+          <a href="contacts.html#form" class="btn btn_primary btn_sm">Заказать звонок</a>
+        </div>
+
+        <button class="header__burger" id="burger-btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" aria-hidden="true">
+    <a href="index.html"    class="mobile-nav__link">Главная</a>
+    <a href="catalog.html"  class="mobile-nav__link mobile-nav__link_active">Каталог</a>
+    <a href="about.html"    class="mobile-nav__link">О компании</a>
+    <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+    <a href="tel:+79288816664" class="mobile-nav__phone">+7 (928) 881-66-64</a>
+  </nav>
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Заголовок страницы каталога">
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="page-hero__breadcrumb" aria-label="Хлебные крошки">
+            <a href="index.html" class="page-hero__breadcrumb-item page-hero__breadcrumb-item_link">Главная</a>
+            <span class="page-hero__breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="page-hero__breadcrumb-item" aria-current="page">Каталог</span>
+          </nav>
+          <h1 class="page-hero__title">Каталог <em>продукции</em></h1>
+          <p class="page-hero__subtitle">
+            Нержавеющий металлопрокат в наличии на складе в Майкопе. Более 200 позиций сортамента. Отгрузка в день заказа.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section class="catalog-page" aria-label="Каталог металлопроката">
+      <div class="container">
+        <div class="catalog-page__layout">
+
+          <!-- ==============================================
+               SIDEBAR FILTERS (desktop)
+               ============================================== -->
+          <aside class="catalog-sidebar" aria-label="Фильтры каталога">
+            <div class="filter-panel" id="filter-panel">
+
+              <div class="filter-panel__header">
+                <span class="filter-panel__title">Фильтры</span>
+                <button class="filter-panel__reset" id="filter-reset-btn" type="button">
+                  Сбросить все
+                </button>
+              </div>
+
+              <!-- Фильтр: Категория -->
+              <div class="filter-group filter-group_open" data-filter-group="category">
+                <button class="filter-group__toggle" aria-expanded="true" aria-controls="fg-category">
+                  <span class="filter-group__label">Категория</span>
+                  <span class="filter-group__arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+                <div class="filter-group__body" id="fg-category" role="group" aria-label="Фильтр по категории">
+                  <ul class="filter-check-list" role="list">
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="category" value="list" data-filter="category" />
+                        <span class="filter-check__box">
+                          <span class="filter-check__box-tick">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                          </span>
+                        </span>
+                        <span class="filter-check__text">Листовой прокат</span>
+                        <span class="filter-check__count">48</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="category" value="truba" data-filter="category" />
+                        <span class="filter-check__box">
+                          <span class="filter-check__box-tick">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                          </span>
+                        </span>
+                        <span class="filter-check__text">Трубы</span>
+                        <span class="filter-check__count">61</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="category" value="prutok" data-filter="category" />
+                        <span class="filter-check__box">
+                          <span class="filter-check__box-tick">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                          </span>
+                        </span>
+                        <span class="filter-check__text">Прутки и проволока</span>
+                        <span class="filter-check__count">34</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="category" value="fason" data-filter="category" />
+                        <span class="filter-check__box">
+                          <span class="filter-check__box-tick">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                          </span>
+                        </span>
+                        <span class="filter-check__text">Фасонный прокат</span>
+                        <span class="filter-check__count">29</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="category" value="rezkа" data-filter="category" />
+                        <span class="filter-check__box">
+                          <span class="filter-check__box-tick">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                          </span>
+                        </span>
+                        <span class="filter-check__text">Резка и обработка</span>
+                        <span class="filter-check__count">12</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Фильтр: Марка стали -->
+              <div class="filter-group filter-group_open" data-filter-group="grade">
+                <button class="filter-group__toggle" aria-expanded="true" aria-controls="fg-grade">
+                  <span class="filter-group__label">Марка стали</span>
+                  <span class="filter-group__arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+                <div class="filter-group__body" id="fg-grade" role="group" aria-label="Фильтр по марке стали">
+                  <ul class="filter-check-list" role="list">
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="grade" value="304" data-filter="grade" />
+                        <span class="filter-check__box"><span class="filter-check__box-tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span></span>
+                        <span class="filter-check__text">AISI 304</span>
+                        <span class="filter-check__count">87</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="grade" value="316" data-filter="grade" />
+                        <span class="filter-check__box"><span class="filter-check__box-tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span></span>
+                        <span class="filter-check__text">AISI 316L</span>
+                        <span class="filter-check__count">53</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="grade" value="430" data-filter="grade" />
+                        <span class="filter-check__box"><span class="filter-check__box-tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span></span>
+                        <span class="filter-check__text">AISI 430</span>
+                        <span class="filter-check__count">31</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="grade" value="321" data-filter="grade" />
+                        <span class="filter-check__box"><span class="filter-check__box-tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span></span>
+                        <span class="filter-check__text">AISI 321</span>
+                        <span class="filter-check__count">13</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Фильтр: Наличие -->
+              <div class="filter-group filter-group_open" data-filter-group="stock">
+                <button class="filter-group__toggle" aria-expanded="true" aria-controls="fg-stock">
+                  <span class="filter-group__label">Наличие</span>
+                  <span class="filter-group__arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+                <div class="filter-group__body" id="fg-stock" role="group" aria-label="Фильтр по наличию">
+                  <ul class="filter-check-list" role="list">
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="stock" value="instock" data-filter="stock" />
+                        <span class="filter-check__box"><span class="filter-check__box-tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span></span>
+                        <span class="filter-check__text">Есть в наличии</span>
+                        <span class="filter-check__count">162</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-check">
+                        <input class="filter-check__input" type="checkbox" name="stock" value="order" data-filter="stock" />
+                        <span class="filter-check__box"><span class="filter-check__box-tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span></span>
+                        <span class="filter-check__text">Под заказ</span>
+                        <span class="filter-check__count">22</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Фильтр: Толщина -->
+              <div class="filter-group" data-filter-group="thickness">
+                <button class="filter-group__toggle" aria-expanded="false" aria-controls="fg-thickness">
+                  <span class="filter-group__label">Толщина / диаметр, мм</span>
+                  <span class="filter-group__arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                  </span>
+                </button>
+                <div class="filter-group__body" id="fg-thickness">
+                  <div class="filter-range">
+                    <div class="filter-range__inputs">
+                      <div class="filter-range__field">
+                        <label class="filter-range__field-label" for="thickness-min">От, мм</label>
+                        <input class="filter-range__input" type="number" id="thickness-min" placeholder="0.5" min="0" step="0.5" />
+                      </div>
+                      <div class="filter-range__field">
+                        <label class="filter-range__field-label" for="thickness-max">До, мм</label>
+                        <input class="filter-range__input" type="number" id="thickness-max" placeholder="120" min="0" step="0.5" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- /filter-panel -->
+          </aside>
+
+          <!-- ==============================================
+               CATALOG MAIN AREA
+               ============================================== -->
+          <div class="catalog-main">
+
+            <!-- Toolbar -->
+            <div class="catalog-toolbar" role="toolbar" aria-label="Управление каталогом">
+
+              <div class="catalog-toolbar__left" style="display:flex;align-items:center;gap:12px;">
+                <!-- Mobile: кнопка открытия фильтров -->
+                <button class="filter-toggle-btn" id="filter-toggle-btn" type="button" aria-controls="filter-drawer" aria-expanded="false">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="8" y1="12" x2="20" y2="12"></line>
+                    <line x1="12" y1="18" x2="20" y2="18"></line>
+                  </svg>
+                  Фильтры
+                  <span class="filter-toggle-btn__badge filter-toggle-btn__badge_hidden" id="filter-badge" aria-label="Активных фильтров:">0</span>
+                </button>
+
+                <p class="catalog-toolbar__found" id="toolbar-found">
+                  Найдено: <strong id="found-count">12</strong> позиций
+                </p>
+              </div>
+
+              <div class="catalog-toolbar__right">
+                <!-- Сортировка -->
+                <div class="catalog-sort">
+                  <label class="catalog-sort__label" for="sort-select">Сортировка:</label>
+                  <select class="catalog-sort__select" id="sort-select" aria-label="Сортировка товаров">
+                    <option value="default">По умолчанию</option>
+                    <option value="name-asc">По названию А–Я</option>
+                    <option value="name-desc">По названию Я–А</option>
+                    <option value="price-asc">Цена: по возрастанию</option>
+                    <option value="price-desc">Цена: по убыванию</option>
+                  </select>
+                </div>
+
+                <!-- Вид: сетка / список -->
+                <div class="view-toggle" role="group" aria-label="Вид отображения">
+                  <button class="view-toggle__btn view-toggle__btn_active" id="view-grid" aria-pressed="true" aria-label="Сеткой" type="button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+                    </svg>
+                  </button>
+                  <button class="view-toggle__btn" id="view-list" aria-pressed="false" aria-label="Списком" type="button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line>
+                      <line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Active filter tags (рендерятся JS'ом) -->
+            <div class="active-filters" id="active-filters" aria-label="Активные фильтры" aria-live="polite"></div>
+
+            <!-- PRODUCT GRID -->
+            <div class="product-grid" id="product-grid" role="list" aria-label="Список товаров">
+
+              <!-- CARD 1 -->
+              <article class="product-card" role="listitem"
+                data-category="list" data-grade="304" data-stock="instock" data-price="4200" data-name="лист х/к aisi 304">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="1"></rect></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_stock">В наличии</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Листовой прокат</p>
+                  <h2 class="product-card__name">Лист х/к AISI 304</h2>
+                  <p class="product-card__desc">Холоднокатаный лист нержавеющей стали. Поверхность 2B. Поставка листами и картами.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 304</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина</span>
+                      <span class="product-card__spec-val">0.5–6 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Размер листа</span>
+                      <span class="product-card__spec-val">1000×2000, 1250×2500</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 4 200 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 2 -->
+              <article class="product-card" role="listitem"
+                data-category="list" data-grade="316" data-stock="instock" data-price="6100" data-name="лист г/к aisi 316l">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="1"></rect></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_new">Новинка</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Листовой прокат</p>
+                  <h2 class="product-card__name">Лист г/к AISI 316L</h2>
+                  <p class="product-card__desc">Горячекатаный лист с молибденом. Повышенная стойкость к хлоридной коррозии.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 316L</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина</span>
+                      <span class="product-card__spec-val">4–40 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Поверхность</span>
+                      <span class="product-card__spec-val">No.1 (г/к)</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 6 100 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 3 -->
+              <article class="product-card" role="listitem"
+                data-category="list" data-grade="430" data-stock="instock" data-price="2800" data-name="лист aisi 430 зеркальный">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="1"></rect></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_hot">Хит</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Листовой прокат</p>
+                  <h2 class="product-card__name">Лист AISI 430 зеркальный</h2>
+                  <p class="product-card__desc">Декоративный лист с зеркальной полировкой BA. Для интерьерных и архитектурных решений.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 430</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина</span>
+                      <span class="product-card__spec-val">0.5–2 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Поверхность</span>
+                      <span class="product-card__spec-val">BA (зеркало)</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 2 800 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 4 -->
+              <article class="product-card" role="listitem"
+                data-category="truba" data-grade="304" data-stock="instock" data-price="5500" data-name="труба круглая aisi 304 бесшовная">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_stock">В наличии</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Трубы</p>
+                  <h2 class="product-card__name">Труба круглая бесшовная AISI 304</h2>
+                  <p class="product-card__desc">Бесшовная холоднодеформированная труба. Для пищевой промышленности и машиностроения.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 304</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Диаметр</span>
+                      <span class="product-card__spec-val">6–219 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Стенка</span>
+                      <span class="product-card__spec-val">1–20 мм</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 5 500 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 5 -->
+              <article class="product-card" role="listitem"
+                data-category="truba" data-grade="304" data-stock="instock" data-price="4900" data-name="труба профильная aisi 304 сварная">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="1"></rect><rect x="7" y="7" width="10" height="10" rx="1"></rect></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_stock">В наличии</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Трубы</p>
+                  <h2 class="product-card__name">Труба профильная сварная AISI 304</h2>
+                  <p class="product-card__desc">Квадратная и прямоугольная профильная труба. Применяется в строительных конструкциях.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 304</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Сечение</span>
+                      <span class="product-card__spec-val">15×15–150×150 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Стенка</span>
+                      <span class="product-card__spec-val">1–6 мм</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 4 900 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 6 -->
+              <article class="product-card" role="listitem"
+                data-category="truba" data-grade="316" data-stock="instock" data-price="7200" data-name="труба капиллярная aisi 316l">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_new">Новинка</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Трубы</p>
+                  <h2 class="product-card__name">Труба капиллярная AISI 316L</h2>
+                  <p class="product-card__desc">Капиллярные трубки для медицинской техники и аналитического оборудования.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 316L</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Диаметр</span>
+                      <span class="product-card__spec-val">0.5–10 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Исполнение</span>
+                      <span class="product-card__spec-val">медицинское</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 7 200 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 7 -->
+              <article class="product-card" role="listitem"
+                data-category="prutok" data-grade="304" data-stock="instock" data-price="3900" data-name="пруток калиброванный aisi 304">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_stock">В наличии</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Прутки и проволока</p>
+                  <h2 class="product-card__name">Пруток калиброванный AISI 304</h2>
+                  <p class="product-card__desc">Калиброванный круглый пруток h11. Точные размеры для токарной обработки.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 304</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Диаметр</span>
+                      <span class="product-card__spec-val">4–100 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Допуск</span>
+                      <span class="product-card__spec-val">h11</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 3 900 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 8 -->
+              <article class="product-card" role="listitem"
+                data-category="fason" data-grade="304" data-stock="instock" data-price="4400" data-name="уголок равнополочный aisi 304">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polyline points="4 20 4 4 20 4"></polyline></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_stock">В наличии</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Фасонный прокат</p>
+                  <h2 class="product-card__name">Уголок равнополочный AISI 304</h2>
+                  <p class="product-card__desc">Равнополочный нержавеющий уголок. Для монтажа оборудования и строительных конструкций.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 304</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Размер</span>
+                      <span class="product-card__spec-val">20×20–100×100 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина полки</span>
+                      <span class="product-card__spec-val">2–8 мм</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 4 400 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 9 -->
+              <article class="product-card" role="listitem"
+                data-category="rezkа" data-grade="304" data-stock="instock" data-price="0" data-name="плазменная резка нержавейки">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="6" cy="6" r="3"></circle><path d="M20 4L8.12 15.88M14.47 14.48L20 20"></path></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_hot">Услуга</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Резка и обработка</p>
+                  <h2 class="product-card__name">Плазменная резка нержавейки</h2>
+                  <p class="product-card__desc">Плазменный раскрой листов по вашим чертежам и DXF-файлам. Точность ±0.5 мм.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина</span>
+                      <span class="product-card__spec-val">1–30 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Точность</span>
+                      <span class="product-card__spec-val">±0.5 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Срок</span>
+                      <span class="product-card__spec-val">от 1 рабочего дня</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">По запросу</p>
+                      <p class="product-card__price-unit">цена по чертежу</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 10 -->
+              <article class="product-card" role="listitem"
+                data-category="prutok" data-grade="316" data-stock="order" data-price="8500" data-name="проволока сварочная aisi 316l">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 12s3-8 9-8 9 8 9 8-3 8-9 8-9-8-9-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_new">Под заказ</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Прутки и проволока</p>
+                  <h2 class="product-card__name">Проволока сварочная AISI 316L</h2>
+                  <p class="product-card__desc">Присадочная проволока для аргонодуговой сварки нержавеющих сталей. В бухтах и на катушках.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 316L / ER316L</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Диаметр</span>
+                      <span class="product-card__spec-val">0.8–4 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Упаковка</span>
+                      <span class="product-card__spec-val">5 / 15 кг бухта</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 8 500 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 11 -->
+              <article class="product-card" role="listitem"
+                data-category="fason" data-grade="316" data-stock="order" data-price="5900" data-name="полоса нержавеющая aisi 316l">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="9" width="20" height="6" rx="1"></rect></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_new">Под заказ</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Фасонный прокат</p>
+                  <h2 class="product-card__name">Полоса нержавеющая AISI 316L</h2>
+                  <p class="product-card__desc">Плоская горячекатаная полоса. Применяется в химическом аппаратостроении.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Марка</span>
+                      <span class="product-card__spec-val">AISI 316L</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Ширина</span>
+                      <span class="product-card__spec-val">20–200 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина</span>
+                      <span class="product-card__spec-val">2–16 мм</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">от 5 900 ₽</p>
+                      <p class="product-card__price-unit">за кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- CARD 12 -->
+              <article class="product-card" role="listitem"
+                data-category="rezkа" data-grade="304" data-stock="instock" data-price="0" data-name="гильотинная резка листа">
+                <div class="product-card__media">
+                  <div class="product-card__media-placeholder" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </div>
+                  <span class="product-card__badge product-card__badge_hot">Услуга</span>
+                </div>
+                <div class="product-card__body">
+                  <p class="product-card__category">Резка и обработка</p>
+                  <h2 class="product-card__name">Гильотинная резка листа</h2>
+                  <p class="product-card__desc">Раскрой листового проката гильотинными ножницами. Прямолинейный рез без отходов.</p>
+                  <ul class="product-card__specs" role="list">
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Толщина</span>
+                      <span class="product-card__spec-val">до 6 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Ширина реза</span>
+                      <span class="product-card__spec-val">до 2500 мм</span>
+                    </li>
+                    <li class="product-card__spec">
+                      <span class="product-card__spec-key">Срок</span>
+                      <span class="product-card__spec-val">в день заказа</span>
+                    </li>
+                  </ul>
+                  <div class="product-card__footer">
+                    <div class="product-card__price">
+                      <p class="product-card__price-val">По запросу</p>
+                      <p class="product-card__price-unit">бесплатно от 50 кг</p>
+                    </div>
+                    <a href="contacts.html#form" class="btn btn_primary btn_sm product-card__btn">Запросить</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Заглушка пустого результата (скрыта по умолчанию) -->
+              <div class="product-grid__empty" id="no-results" hidden aria-live="polite">
+                <p class="product-grid__empty-icon" aria-hidden="true">⬡</p>
+                <p class="product-grid__empty-title">Ничего не найдено</p>
+                <p class="product-grid__empty-text">Попробуйте изменить параметры фильтрации или <button class="filter-panel__reset" id="no-results-reset" type="button" style="color:var(--clr-accent);background:none;border:none;cursor:pointer;font-size:inherit;">сбросить все фильтры</button>.</p>
+              </div>
+
+            </div>
+            <!-- /product-grid -->
+
+            <!-- PAGINATION -->
+            <nav class="pagination" aria-label="Пагинация каталога" id="pagination">
+              <button class="pagination__btn pagination__btn_disabled" aria-label="Предыдущая страница" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="pagination__btn pagination__btn_active" aria-current="page" aria-label="Страница 1" type="button">1</button>
+              <button class="pagination__btn" aria-label="Страница 2" type="button">2</button>
+              <button class="pagination__btn" aria-label="Страница 3" type="button">3</button>
+              <span class="pagination__dots" aria-hidden="true">…</span>
+              <button class="pagination__btn" aria-label="Страница 9" type="button">9</button>
+              <button class="pagination__btn" aria-label="Следующая страница" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </nav>
+
+          </div>
+          <!-- /catalog-main -->
+
+        </div>
+        <!-- /catalog-page__layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MOBILE FILTER DRAWER -->
+  <div class="filter-overlay" id="filter-overlay" aria-hidden="true"></div>
+  <div class="filter-drawer" id="filter-drawer" role="dialog" aria-modal="true" aria-label="Фильтры" aria-hidden="true">
+    <div class="filter-drawer__header">
+      <span class="filter-drawer__title">Фильтры</span>
+      <button class="filter-drawer__close" id="filter-drawer-close" aria-label="Закрыть фильтры" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <!-- Содержимое drawer клонируется из #filter-panel через JS -->
+    <div class="filter-drawer__body" id="filter-drawer-body"></div>
+    <div class="filter-drawer__apply">
+      <button class="btn btn_primary" id="filter-drawer-apply" type="button">Применить</button>
+    </div>
+  </div>
+
+ 
+    <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <!-- Col 1: Brand -->
+          <div class="footer__brand">
+            <!-- LOGO: NOT MODIFY -->
+            <a
+              href="index.html"
+              class="footer__logo"
+              aria-label="Нержавейка Майкоп — на главную"
+            >
+              <img src="images/combo-logo.webp" alt="logo" />
+            </a>
+            <!-- LOGO END -->
+
+            <p class="footer__desc">
+              Поставки нержавеющего металлопроката оптом и в розницу.
+              Собственный склад в Майкопе. Работаем по всему ЮФО с 2020 года.
+            </p>
+
+            <div class="footer__socials" aria-label="Социальные сети">
+              <a href="https://max.ru/u/f9LHodD0cOIz-Brsv5FiRp-jdh0r43NAV6Sjc1_zUqM0gEePgRU9gAVHlK0" class="footer__social-link" aria-label="Max">MX</a>
+            <a href="https://t.me/+79288816664" class="footer__social-link" aria-label="Telegram">TG</a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B79288816664&text&type=phone_number&app_absent=0" class="footer__social-link" aria-label="WhatsApp">WA</a>
+              </a>
+            </div>
+          </div>
+          <!-- /brand -->
+
+          <!-- Col 2: Navigation -->
+          <nav class="footer__col" aria-label="Разделы сайта">
+            <p class="footer__col-title">Навигация</p>
+            <ul class="footer__nav" role="list">
+              <li><a href="index.html" class="footer__nav-link">Главная</a></li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link">Каталог</a>
+              </li>
+              <li>
+                <a href="about.html" class="footer__nav-link">О компании</a>
+              </li>
+              <li>
+                <a href="contacts.html" class="footer__nav-link">Контакты</a>
+              </li>
+              <li>
+                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Col 3: Catalog sections -->
+          <nav class="footer__col" aria-label="Разделы каталога">
+            <p class="footer__col-title">Продукция</p>
+            <ul class="footer__nav" role="list">
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Листовой прокат</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Трубы нержавеющие</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Прутки и проволока</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Фасонный прокат</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Резка и обработка</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Col 4: Contacts -->
+          <address class="footer__col" style="font-style: normal">
+            <p class="footer__col-title">Контакты</p>
+            <ul class="footer__contacts" role="list">
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span
+                  >Республика Адыгея,<br />г. Майкоп, ул. Хакурате, д.506</span
+                >
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:+79288816664" class="footer__contact-link"
+                  >+7 (928) 881 66-64</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a
+                  href="mailto:s.stainles01@gmail.com"
+                  class="footer__contact-link"
+                  >s.stainles01@gmail.com</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Режим работы: <br />ежедневно 9:00 - 17:00</span>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- /footer__grid -->
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            2026 © ООО «Нержавеющая сталь». Все права защищены.
+          </p>
+          <nav class="footer__bottom-links" aria-label="Юридические документы">
+            <a href="#" class="footer__bottom-link"
+              >Политика конфиденциальности</a
+            >
+            <a href="#" class="footer__bottom-link">Реквизиты</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+
+  <script src="js/main.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Нержавейка Майкоп — поставки нержавеющей стали оптом и в розницу. Листы, трубы, прутки, фасонный прокат. Работаем по всему ЮФО."
+    />
+    <title>Нержавейка Майкоп — нержавеющий металлопрокат</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header" id="site-header" role="banner">
+      <div class="container">
+        <div class="header__inner">
+          <a
+            href="index.html"
+            class="header__logo"
+            aria-label="Нержавейка Майкоп — на главную"
+          >
+            <img
+              src="images/combo-logo.webp"
+              alt="logo"
+              width="220"
+              height="50"
+            />
+          </a>
+
+          <nav class="nav" aria-label="Основная навигация">
+            <ul class="nav__list" role="list">
+              <li class="nav__item">
+                <a
+                  href="index.html"
+                  class="nav__link nav__link_active"
+                  aria-current="page"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="catalog.html" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="about.html" class="nav__link">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a href="contacts.html" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__cta">
+            <a
+              href="tel:+79288816664"
+              class="header__phone"
+              aria-label="Позвонить нам"
+            >
+              +7 (928) 881-66-64
+            </a>
+            <a href="contacts.html#form" class="btn btn_primary btn_sm"
+              >Позвонить</a
+            >
+          </div>
+
+          <button
+            class="header__burger"
+            id="burger-btn"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-label="Мобильная навигация"
+      aria-hidden="true"
+    >
+      <a
+        href="index.html"
+        class="mobile-nav__link mobile-nav__link_active"
+        aria-current="page"
+        >Главная</a
+      >
+      <a href="catalog.html" class="mobile-nav__link">Каталог</a>
+      <a href="about.html" class="mobile-nav__link">О компании</a>
+      <a href="contacts.html" class="mobile-nav__link">Контакты</a>
+      <a href="tel:+79288816664" class="mobile-nav__phone"
+        >+7 (928) 881-66-64</a
+      >
+    </nav>
+
+ 
+    <main id="main-content">
+
+      <section class="hero" aria-label="Главный баннер">
+        <div
+          class="slider"
+          id="hero-slider"
+          role="region"
+          aria-roledescription="карусель"
+          aria-label="Ключевые преимущества"
+        >
+          <div
+            class="slider__wrapper"
+            id="slider-wrapper"
+            aria-live="polite"
+            aria-atomic="false"
+          >
+            <article
+              class="slider__slide slider__slide_active"
+              role="group"
+              aria-roledescription="слайд"
+              aria-label="Слайд 1 из 3"
+            >
+              <div class="slider__slide-bg" aria-hidden="true"></div>
+              <div class="slider__slide-deco" aria-hidden="true"></div>
+              <div class="slider__content">
+                <div class="slider__inner">
+                  <p class="slider__label">Металлопрокат</p>
+                  <h1 class="slider__title">
+                    Нержавеющая <em>сталь</em><br />для любых задач
+                  </h1>
+                  <p class="slider__text">
+                    Поставки листового, сортового и трубного проката марок AISI
+                    304, 316, 430 со склада в Майкопе. Отгрузка в день заказа.
+                  </p>
+                  <div class="slider__actions">
+                    <a href="catalog.html" class="btn btn_primary"
+                      >Смотреть каталог</a
+                    >
+                    <a href="contacts.html#form" class="btn btn_outline"
+                      >Получить расчёт</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="slider__slide"
+              role="group"
+              aria-roledescription="слайд"
+              aria-label="Слайд 2 из 3"
+            >
+              <div class="slider__slide-bg" aria-hidden="true"></div>
+              <div class="slider__slide-deco" aria-hidden="true"></div>
+              <div class="slider__content">
+                <div class="slider__inner">
+                  <p class="slider__label">Склад в Майкопе</p>
+                  <h2 class="slider__title">
+                    Более <em>500 тонн</em><br />в наличии
+                  </h2>
+                  <p class="slider__text">
+                    Собственный склад площадью 3 000 м². Широкий сортамент:
+                    лист, труба, пруток, уголок, швеллер, фасонный прокат.
+                  </p>
+                  <div class="slider__actions">
+                    <a href="catalog.html" class="btn btn_primary"
+                      >Весь ассортимент</a
+                    >
+                    <a href="about.html" class="btn btn_outline">О компании</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="slider__slide"
+              role="group"
+              aria-roledescription="слайд"
+              aria-label="Слайд 3 из 3"
+            >
+              <div class="slider__slide-bg" aria-hidden="true"></div>
+              <div class="slider__slide-deco" aria-hidden="true"></div>
+              <div class="slider__content">
+                <div class="slider__inner">
+                  <p class="slider__label">Обработка металла</p>
+                  <h2 class="slider__title">
+                    Резка и<br />обработка <em>под заказ</em>
+                  </h2>
+                  <p class="slider__text">
+                    Плазменная и гильотинная резка, гибка, токарная обработка.
+                    Изготовим детали по вашим чертежам. Собственное
+                    производство.
+                  </p>
+                  <div class="slider__actions">
+                    <a href="contacts.html#form" class="btn btn_primary"
+                      >Оставить заявку</a
+                    >
+                    <a href="about.html#services" class="btn btn_outline"
+                      >Услуги</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button
+            class="slider__btn slider__btn_prev"
+            id="slider-prev"
+            aria-label="Предыдущий слайд"
+            type="button"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <button
+            class="slider__btn slider__btn_next"
+            id="slider-next"
+            aria-label="Следующий слайд"
+            type="button"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <div
+            class="slider__dots"
+            id="slider-dots"
+            role="tablist"
+            aria-label="Навигация по слайдам"
+          >
+            <button
+              class="slider__dot slider__dot_active"
+              role="tab"
+              aria-selected="true"
+              aria-label="Слайд 1"
+              data-index="0"
+            ></button>
+            <button
+              class="slider__dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Слайд 2"
+              data-index="1"
+            ></button>
+            <button
+              class="slider__dot"
+              role="tab"
+              aria-selected="false"
+              aria-label="Слайд 3"
+              data-index="2"
+            ></button>
+          </div>
+
+          <div
+            class="slider__progress"
+            id="slider-progress"
+            aria-hidden="true"
+          ></div>
+
+          <div class="slider__scroll-hint" aria-hidden="true">
+            <span class="slider__scroll-hint-text">Scroll</span>
+            <span class="slider__scroll-hint-line"></span>
+          </div>
+        </div>
+      </section>
+    
+      <section class="stats" aria-label="Ключевые показатели компании">
+        <div class="container">
+          <ul class="stats__grid" role="list">
+            <li class="stats__item">
+              <div class="stats__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="stats__body">
+                <p class="stats__value">6 лет</p>
+                <p class="stats__label">на рынке металлопроката</p>
+              </div>
+            </li>
+
+            <li class="stats__item">
+              <div class="stats__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+                  ></path>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="stats__body">
+                <p class="stats__value">500+ тонн</p>
+                <p class="stats__label">постоянный складской запас</p>
+              </div>
+            </li>
+
+            <li class="stats__item">
+              <div class="stats__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="stats__body">
+                <p class="stats__value">1 200+</p>
+                <p class="stats__label">постоянных клиентов</p>
+              </div>
+            </li>
+
+            <li class="stats__item">
+              <div class="stats__icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="stats__body">
+                <p class="stats__value">24 часа</p>
+                <p class="stats__label">срок отгрузки со склада</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="categories" aria-labelledby="categories-title">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__label">Ассортимент</p>
+            <h2 class="section-header__title" id="categories-title">
+              Виды <em>металлопроката</em>
+            </h2>
+            <p class="section-header__subtitle">
+              Полный сортамент нержавеющего проката в наличии на складе в
+              Майкопе. Работаем с юридическими и физическими лицами.
+            </p>
+          </header>
+
+          <div class="categories__grid">
+            <article
+              class="category-card category-card_wide"
+              aria-label="Листовой прокат"
+            >
+              <div class="category-card__bg" style="background-image: url('images/listy.webp');" aria-hidden="true"></div>
+              <div class="category-card__overlay" aria-hidden="true"></div>
+              <div class="category-card__icon-wrap" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="1"></rect>
+                  <line x1="2" y1="20" x2="22" y2="20"></line>
+                </svg>
+              </div>
+              <div class="category-card__body">
+                <span class="category-card__tag">Популярное</span>
+                <h3 class="category-card__title">Листовой прокат</h3>
+                <p class="category-card__desc">
+                  Холоднокатаный и горячекатаный лист. Толщина 0,5–120 мм. Марки
+                  AISI 304, 316L, 430.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="category-card category-card_tall"
+              aria-label="Трубы нержавеющие"
+            >
+              <div class="category-card__bg" style="background-image: url('images/truba.webp');" aria-hidden="true"></div>
+              <div class="category-card__overlay" aria-hidden="true"></div>
+              <div class="category-card__icon-wrap" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div class="category-card__body">
+                <span class="category-card__tag">Большой выбор</span>
+                <h3 class="category-card__title">Трубы</h3>
+                <p class="category-card__desc">
+                  Бесшовные и сварные. Круглые, профильные, капиллярные. Пищевое
+                  и промышленное исполнение.
+                </p>
+              </div>
+            </article>
+
+            <!-- Прутки -->
+            <article class="category-card" aria-label="Прутки и проволока">
+              <div class="category-card__bg" style="background-image: url('images/provoloka.webp');" aria-hidden="true"></div>
+              <div class="category-card__overlay" aria-hidden="true"></div>
+              <div class="category-card__icon-wrap" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="7" x2="21" y2="7"></line>
+                  <line x1="3" y1="17" x2="21" y2="17"></line>
+                </svg>
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Прутки и проволока</h3>
+                <p class="category-card__desc">
+                  Калиброванный и горячекатаный пруток Ø 4–200 мм. Проволока в
+                  бухтах.
+                </p>
+              </div>
+            </article>
+
+            <article class="category-card" aria-label="Фасонный прокат">
+              <div class="category-card__bg" style="background-image: url('images/prokat.webp');"aria-hidden="true"></div>
+              <div class="category-card__overlay" aria-hidden="true"></div>
+              <div class="category-card__icon-wrap" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <polyline
+                    points="4 20 4 4 12 4 12 12 20 12 20 20 4 20"
+                  ></polyline>
+                </svg>
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Фасонный прокат</h3>
+                <p class="category-card__desc">
+                  Уголок, швеллер, двутавр, полоса. Нестандартные профили под
+                  заказ.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="category-card"
+              aria-label="Резка и обработка металла"
+            >
+              <div class="category-card__bg" style="background-image: url('images/rezka.webp');" aria-hidden="true"></div>
+              <div class="category-card__overlay" aria-hidden="true"></div>
+              <div class="category-card__icon-wrap" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <path
+                    d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
+                  ></path>
+                </svg>
+              </div>
+              <div class="category-card__body">
+                <span class="category-card__tag">Услуга</span>
+                <h3 class="category-card__title">Резка и обработка</h3>
+                <p class="category-card__desc">
+                  Плазменная, гильотинная резка. Гибка, токарная обработка. По
+                  чертежам.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 40px">
+            <a href="catalog.html" class="btn btn_outline"
+              >Весь каталог продукции</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="advantages" aria-labelledby="advantages-title">
+        <div class="container">
+          <header class="section-header section-header_centered">
+            <p class="section-header__label">Почему выбирают нас</p>
+            <h2 class="section-header__title" id="advantages-title">
+              Наши <em>преимущества</em>
+            </h2>
+          </header>
+
+          <div class="advantages__grid">
+            <article class="advantage-item">
+              <span class="advantage-item__number" aria-hidden="true">01</span>
+              <div class="advantage-item__body">
+                <h3 class="advantage-item__title">Прямые поставки с заводов</h3>
+                <p class="advantage-item__text">
+                  Официальный дилер ведущих российских и европейских
+                  металлургических заводов. Гарантия подлинности с сертификатами
+                  качества на каждую партию.
+                </p>
+              </div>
+            </article>
+
+            <article class="advantage-item">
+              <span class="advantage-item__number" aria-hidden="true">02</span>
+              <div class="advantage-item__body">
+                <h3 class="advantage-item__title">Собственный склад 3000 м²</h3>
+                <p class="advantage-item__text">
+                  Постоянный складской запас свыше 500 тонн. Широкий выбор
+                  типоразмеров позволяет отгружать точно в срок без ожидания
+                  завоза.
+                </p>
+              </div>
+            </article>
+
+            <article class="advantage-item">
+              <span class="advantage-item__number" aria-hidden="true">03</span>
+              <div class="advantage-item__body">
+                <h3 class="advantage-item__title">Резка в размер бесплатно</h3>
+                <p class="advantage-item__text">
+                  При заказе от 50 кг — плазменная или гильотинная резка в
+                  размер без доплаты. Точность реза ±0,5 мм. Экономия на
+                  дальнейшей обработке.
+                </p>
+              </div>
+            </article>
+
+            <article class="advantage-item">
+              <span class="advantage-item__number" aria-hidden="true">04</span>
+              <div class="advantage-item__body">
+                <h3 class="advantage-item__title">Доставка по ЮФО</h3>
+                <p class="advantage-item__text">
+                  Свой автопарк для доставки товара прямо до двери, организации,
+                  производства и любого другого места, которое вы укажете. За
+                  пределы ЮФО мы отправляем грузы через транспортные компании.
+                  Ими мы доставляем до пунктов выдачи и до двери.
+                </p>
+              </div>
+            </article>
+
+            <article class="advantage-item">
+              <span class="advantage-item__number" aria-hidden="true">05</span>
+              <div class="advantage-item__body">
+                <h3 class="advantage-item__title">Гибкие условия оплаты</h3>
+                <p class="advantage-item__text">
+                  Наличный и безналичный расчёт. Отсрочка платежа для постоянных
+                  клиентов. Работа по договору для юридических лиц с НДС и без.
+                </p>
+              </div>
+            </article>
+
+            <article class="advantage-item">
+              <span class="advantage-item__number" aria-hidden="true">06</span>
+              <div class="advantage-item__body">
+                <h3 class="advantage-item__title">Технический консалтинг</h3>
+                <p class="advantage-item__text">
+                  Поможем подобрать марку стали, толщину и форму под вашу
+                  задачу. Бесплатная консультация инженера-металлурга по
+                  телефону и e-mail.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="materials" aria-labelledby="materials-title">
+        <div class="container">
+          <div class="materials__layout">
+            <div class="materials__visual">
+              <div class="materials__visual-box" style="background-image: url('images/Aisi304.webp');"aria-hidden="true">
+                <span class="materials__badge">Хит продаж</span>
+              </div>
+
+              <ul
+                class="materials__grades"
+                role="list"
+                aria-label="Доступные марки стали"
+              >
+                <li class="materials__grade-item">
+                  <span class="materials__grade-code">AISI 304</span>
+                  <span class="materials__grade-name"
+                    >Пищевая / общего назначения</span
+                  >
+                  <span class="materials__grade-mark">в наличии</span>
+                </li>
+                <li class="materials__grade-item">
+                  <span class="materials__grade-code">AISI 316L</span>
+                  <span class="materials__grade-name"
+                    >Медицинская / химстойкая</span
+                  >
+                  <span class="materials__grade-mark">в наличии</span>
+                </li>
+                <li class="materials__grade-item">
+                  <span class="materials__grade-code">AISI 430</span>
+                  <span class="materials__grade-name"
+                    >Ферритная / декоративная</span
+                  >
+                  <span class="materials__grade-mark">в наличии</span>
+                </li>
+                <li class="materials__grade-item">
+                  <span class="materials__grade-code">AISI 321</span>
+                  <span class="materials__grade-name"
+                    >Жаростойкая / сварная</span
+                  >
+                  <span class="materials__grade-mark">под заказ</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="materials__info">
+              <header class="section-header">
+                <p class="section-header__label">Технические характеристики</p>
+                <h2 class="section-header__title" id="materials-title">
+                  Марки <em>стали</em> и<br />параметры
+                </h2>
+                <p class="section-header__subtitle">
+                  Поставляем сталь с документально подтверждёнными
+                  характеристиками. Все партии сопровождаются сертификатами по
+                  ГОСТ и DIN.
+                </p>
+              </header>
+
+              <div
+                class="spec-table"
+                role="table"
+                aria-label="Технические характеристики AISI 304"
+              >
+                <div class="spec-table__row" role="row">
+                  <span class="spec-table__key" role="cell">Марка по ГОСТ</span>
+                  <span
+                    class="spec-table__val spec-table__val_accent"
+                    role="cell"
+                    >08Х18Н10</span
+                  >
+                </div>
+                <div class="spec-table__row" role="row">
+                  <span class="spec-table__key" role="cell"
+                    >Cr / Ni содержание</span
+                  >
+                  <span class="spec-table__val" role="cell"
+                    >18–20% / 8–10%</span
+                  >
+                </div>
+                <div class="spec-table__row" role="row">
+                  <span class="spec-table__key" role="cell"
+                    >Предел прочности</span
+                  >
+                  <span class="spec-table__val" role="cell">≥ 520 МПа</span>
+                </div>
+                <div class="spec-table__row" role="row">
+                  <span class="spec-table__key" role="cell"
+                    >Рабочая температура</span
+                  >
+                  <span class="spec-table__val" role="cell"
+                    >−200 … +600 °C</span
+                  >
+                </div>
+                <div class="spec-table__row" role="row">
+                  <span class="spec-table__key" role="cell">Поверхность</span>
+                  <span class="spec-table__val" role="cell"
+                    >2B, BA, No.1, No.4, зеркало</span
+                  >
+                </div>
+                <div class="spec-table__row" role="row">
+                  <span class="spec-table__key" role="cell">Сертификаты</span>
+                  <span
+                    class="spec-table__val spec-table__val_accent"
+                    role="cell"
+                    >ГОСТ, EN, ASTM, PED</span
+                  >
+                </div>
+              </div>
+
+              <div
+                style="
+                  margin-top: 32px;
+                  display: flex;
+                  gap: 14px;
+                  flex-wrap: wrap;
+                "
+              >
+                <a href="catalog.html" class="btn btn_primary"
+                  >Перейти в каталог</a
+                >
+                <a href="contacts.html#form" class="btn btn_outline"
+                  >Запросить КП</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta-form" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta__layout">
+            <div class="cta__text">
+              <header class="section-header">
+                <p class="section-header__label">Обратная связь</p>
+                <h2 class="section-header__title" id="cta-title">Получите <em>расчёт</em><br />стоимости</h2>
+              </header>
+              <p class="cta__lead-text">Оставьте заявку — наш менеджер перезвонит в течение 15 минут,
+                уточнит потребность и подготовит индивидуальное коммерческое
+                предложение.</p>
+              <ul class="cta__features" role="list">
+                <li class="cta__feature">
+                  <span class="cta__feature-icon" aria-hidden="true"></span>
+                  Ответим в течение 15 минут в рабочее время </li>
+                <li class="cta__feature">
+                  <span class="cta__feature-icon" aria-hidden="true"></span>
+                  Индивидуальные цены для постоянных клиентов</li>
+                <li class="cta__feature">
+                  <span class="cta__feature-icon" aria-hidden="true"></span>
+                  Бесплатная доставка от 200 кг по Майкопу </li>
+                <li class="cta__feature">
+                  <span class="cta__feature-icon" aria-hidden="true"></span>
+                  Работаем с НДС и без, с физлицами и юрлицами</li>
+              </ul>
+            </div>
+
+            <div class="cta__form-wrap">
+              <div class="contact-form" id="contact-form-block">
+                <p class="contact-form__title">Оставить заявку</p>
+                <form  class="contact-form__form"  id="contact-form"  novalidate  aria-label="Форма обратной связи">
+                  <div class="form-group">
+                    <label class="form-group__label" for="field-name">Ваше имя</label>
+                    <input  class="form-group__input"   type="text"   id="field-name"   name="name"  placeholder="Иван Иванов"  autocomplete="name"  required/>
+                    <p class="form-group__error" id="error-name" role="alert"> Пожалуйста, введите ваше имя</p>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-group__label" for="field-phone" >Телефон <abbr title="обязательное поле">*</abbr></label>
+                    <input  class="form-group__input"  type="tel" id="field-phone"  name="phone"    placeholder="+7 (___) ___-__-__"  autocomplete="tel"  required/>
+                    <p class="form-group__error" id="error-phone" role="alert">Введите корректный номер телефона</p>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-group__label" for="field-email">E-mail</label>
+                    <input class="form-group__input" type="email"  id="field-email"   name="email"  placeholder="example@mail.ru"   autocomplete="email"/>
+                    <p class="form-group__error" id="error-email" role="alert">Введите корректный e-mail</p>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-group__label" for="field-message">Комментарий / описание потребности</label>
+                    <textarea  class="form-group__textarea"  id="field-message"   name="message"  placeholder="Например: лист AISI 304, толщина 2 мм, 10 кв.м."></textarea>
+                  </div>
+
+                  <button class="btn btn_primary contact-form__submit"  type="submit">Отправить заявку</button>
+                  <p class="contact-form__note">Нажимая кнопку, вы соглашаетесь с<a href="#" style="color: var(--clr-accent)">политикой конфиденциальности</a></p>
+                </form>
+
+                <div
+                  class="contact-form__success"
+                  id="form-success"
+                  aria-live="polite"
+                  aria-atomic="true"
+                >
+                  <p class="contact-form__success-icon" aria-hidden="true">✓</p>
+                  <p class="contact-form__success-title">Заявка отправлена!</p>
+                  <p class="contact-form__success-text">
+                    Мы свяжемся с вами в течение 15 минут.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a
+              href="index.html"
+              class="footer__logo"
+              aria-label="Нержавейка Майкоп — на главную"
+            >
+              <img src="images/combo-logo.webp" alt="logo" />
+            </a>
+
+            <p class="footer__desc">
+              Поставки нержавеющего металлопроката оптом и в розницу.
+              Собственный склад в Майкопе. Работаем по всему ЮФО с 2020 года.
+            </p>
+
+            <div class="footer__socials" aria-label="Социальные сети">
+              <a href="https://max.ru/u/f9LHodD0cOIz-Brsv5FiRp-jdh0r43NAV6Sjc1_zUqM0gEePgRU9gAVHlK0" class="footer__social-link" aria-label="Max">MX</a>
+            <a href="https://t.me/+79288816664" class="footer__social-link" aria-label="Telegram">TG</a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B79288816664&text&type=phone_number&app_absent=0" class="footer__social-link" aria-label="WhatsApp">WA</a>
+              </a>
+            </div>
+          </div>
+
+          <nav class="footer__col" aria-label="Разделы сайта">
+            <p class="footer__col-title">Навигация</p>
+            <ul class="footer__nav" role="list">
+              <li><a href="index.html" class="footer__nav-link">Главная</a></li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link">Каталог</a>
+              </li>
+              <li>
+                <a href="about.html" class="footer__nav-link">О компании</a>
+              </li>
+              <li>
+                <a href="contacts.html" class="footer__nav-link">Контакты</a>
+              </li>
+              <li>
+                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__col" aria-label="Разделы каталога">
+            <p class="footer__col-title">Продукция</p>
+            <ul class="footer__nav" role="list">
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Листовой прокат</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Трубы нержавеющие</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Прутки и проволока</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Фасонный прокат</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer__nav-link"
+                  >Резка и обработка</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <address class="footer__col" style="font-style: normal">
+            <p class="footer__col-title">Контакты</p>
+            <ul class="footer__contacts" role="list">
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span
+                  >Республика Адыгея,<br />г. Майкоп, ул. Хакурате, д.506</span
+                >
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:+79288816664" class="footer__contact-link"
+                  >+7 (928) 881 66-64</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a
+                  href="mailto:s.stainles01@gmail.com"
+                  class="footer__contact-link"
+                  >s.stainles01@gmail.com</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <svg
+                  class="footer__contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Режим работы: <br />ежедневно 9:00 - 17:00</span>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            2026 © ООО «Нержавеющая сталь». Все права защищены.
+          </p>
+          <nav class="footer__bottom-links" aria-label="Юридические документы">
+            <a href="#" class="footer__bottom-link"
+              >Политика конфиденциальности</a
+            >
+            <a href="#" class="footer__bottom-link">Реквизиты</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/form.js" defer></script>
+  </body>
+</html>

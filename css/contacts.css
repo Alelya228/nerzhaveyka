@@ -1,0 +1,635 @@
+/* =========================================================
+   НЕРЖАВЕЙКА МАЙКОП — contacts.css
+   Страница контактов: карта, реквизиты, форма, сотрудники
+   ========================================================= */
+
+/* =========================================================
+   CONTACTS GRID — основной блок
+   ========================================================= */
+
+.contacts-section {
+  padding: 80px 0 96px;
+}
+
+.contacts-section__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+
+.contacts-info__block {
+  margin-bottom: 40px;
+}
+
+.contacts-info__block-title {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts-info__block-title::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--clr-accent);
+}
+
+.contacts-info__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--clr-border-light);
+}
+
+.contacts-info__item:last-child {
+  border-bottom: none;
+}
+
+.contacts-info__icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--clr-accent-glow);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-accent);
+  margin-top: 2px;
+}
+
+.contacts-info__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+.contacts-info__label {
+  font-size: 0.75rem;
+  color: var(--clr-text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.contacts-info__value {
+  font-size: 0.9375rem;
+  color: var(--clr-text-primary);
+  line-height: 1.5;
+}
+
+.contacts-info__value_link {
+  transition: color var(--transition);
+}
+
+.contacts-info__value_link:hover {
+  color: var(--clr-accent);
+}
+
+.contacts-info__value_accent {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--clr-accent);
+}
+
+/* --- Map --- */
+.contacts-map {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+  background: var(--clr-bg-card);
+  aspect-ratio: 16/10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Декоративная заглушка карты */
+.contacts-map__placeholder {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(79,195,247,0.03) 0px, rgba(79,195,247,0.03) 1px,
+      transparent 1px, transparent 60px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(79,195,247,0.03) 0px, rgba(79,195,247,0.03) 1px,
+      transparent 1px, transparent 60px
+    );
+}
+
+.contacts-map__pin {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.contacts-map__pin-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--clr-accent);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 24px rgba(79,195,247,0.4);
+}
+
+.contacts-map__pin-icon svg {
+  transform: rotate(45deg);
+  width: 22px;
+  height: 22px;
+  color: var(--clr-text-on-accent);
+}
+
+.contacts-map__pin-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-text-secondary);
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+}
+
+/* Реальный iframe-embed (если подключите Яндекс.Карты) */
+.contacts-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  filter: grayscale(1) invert(0.9) hue-rotate(180deg) brightness(0.8);
+}
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+
+.contacts-form-section {
+  padding: 0 0 96px;
+  background: var(--clr-steel-900);
+  border-top: 1px solid var(--clr-border);
+  padding-top: 80px;
+}
+
+.contacts-form-section__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contacts-form-info__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--clr-text-primary);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contacts-form-info__title em {
+  font-style: normal;
+  color: var(--clr-accent);
+}
+
+.contacts-form-info__text {
+  font-size: 0.9375rem;
+  color: var(--clr-text-muted);
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.contacts-form-info__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts-form-info__hour {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+}
+
+.contacts-form-info__hour-day {
+  color: var(--clr-text-muted);
+}
+
+.contacts-form-info__hour-time {
+  color: var(--clr-text-primary);
+  font-weight: 500;
+}
+
+.contacts-form-info__hour_closed .contacts-form-info__hour-time {
+  color: var(--clr-text-muted);
+}
+
+/* Form (переиспользуем стили из index.css — добавляем только специфику) */
+.contacts-contact-form {
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+}
+
+.contacts-contact-form__title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--clr-text-primary);
+  margin-bottom: 24px;
+}
+
+/* =========================================================
+   STAFF — КАРТОЧКИ СОТРУДНИКОВ
+   ========================================================= */
+
+.staff-section {
+  padding: 96px 0;
+}
+
+.staff-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+
+/* --- Карточка директора (большая, верхняя) --- */
+.staff-card {
+  position: relative;
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.staff-card:hover {
+  border-color: var(--clr-border-hover);
+  box-shadow: var(--shadow-card), 0 0 32px rgba(79,195,247,0.08);
+  transform: translateY(-3px);
+}
+
+/* Директор — широкая карточка */
+.staff-card_director {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+}
+
+/* --- Фото --- */
+.staff-card__photo {
+  position: relative;
+  overflow: hidden;
+  background: var(--clr-bg-body);
+  flex-shrink: 0;
+}
+
+.staff-card_director .staff-card__photo {
+  min-height: 340px;
+}
+
+.staff-card__photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  filter: grayscale(15%) contrast(1.05);
+  transition: filter var(--transition), transform 0.5s var(--ease-out);
+}
+
+.staff-card:hover .staff-card__photo-img {
+  filter: grayscale(0%) contrast(1.08);
+  transform: scale(1.03);
+}
+
+/* Плейсхолдер вместо фото */
+.staff-card__photo-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  background: var(--clr-bg-body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+}
+
+.staff-card__photo-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(79,195,247,0.02) 0px, rgba(79,195,247,0.02) 1px,
+      transparent 1px, transparent 20px
+    );
+}
+
+.staff-card__photo-initials {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  background: var(--clr-accent-glow);
+  border: 2px solid var(--clr-border-hover);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  letter-spacing: 0.05em;
+}
+
+/* Декоративный логотип на фото (как в референсе) */
+.staff-card__photo-brand {
+  position: absolute;
+  width: 120px;
+  height: 35px;
+  top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(13,17,23,0.7);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+.staff-card__photo-brand-text {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  line-height: 1.1;
+}
+
+/* Градиент поверх фото снизу */
+.staff-card__photo-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(13,17,23,0.6), transparent);
+  pointer-events: none;
+}
+
+/* --- Тело карточки --- */
+.staff-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Декоративная линия акцента слева */
+.staff-card_director .staff-card__body::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--clr-accent), transparent);
+}
+
+.staff-card__role {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.staff-card__role::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--clr-accent);
+}
+
+.staff-card__name {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  color: var(--clr-text-primary);
+  margin-bottom: 6px;
+}
+
+.staff-card__position {
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+
+.staff-card__phone {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--clr-text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  transition: color var(--transition);
+  line-height: 1.1;
+}
+
+.staff-card__phone::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: var(--clr-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(79,195,247,0.6);
+}
+
+.staff-card__phone:hover {
+  color: var(--clr-accent);
+}
+
+.staff-card__email {
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+  transition: color var(--transition);
+}
+
+.staff-card__email:hover {
+  color: var(--clr-accent);
+}
+
+.staff-card__scope {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--clr-border-light);
+}
+
+.staff-card__scope-label {
+  font-size: 0.75rem;
+  color: var(--clr-text-muted);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.staff-card__scope-value {
+  font-size: 0.875rem;
+  color: var(--clr-text-secondary);
+  line-height: 1.5;
+}
+
+/* Обычная карточка (не директор) — вертикальная */
+.staff-card_regular {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-card_regular .staff-card__photo {
+  aspect-ratio: 4/3;
+}
+
+.staff-card_regular .staff-card__body {
+  padding: 24px 28px 28px;
+  justify-content: flex-start;
+}
+
+.staff-card_regular .staff-card__name {
+  font-size: 1.05rem;
+}
+
+.staff-card_regular .staff-card__phone {
+  font-size: 1.15rem;
+}
+
+.staff-card_regular .staff-card__body::before {
+  display: none;
+}
+
+/* =========================================================
+   АДАПТИВ — Contacts
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .staff-card_director {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .staff-card_director .staff-card__photo {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contacts-section__layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .contacts-form-section__layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .staff-card_director {
+    grid-column: span 2;
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-section__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .staff-card_director {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+
+  .staff-card_director .staff-card__photo {
+    min-height: 260px;
+    aspect-ratio: 16/9;
+  }
+
+  .staff-card_director .staff-card__body {
+    padding: 24px 24px 28px;
+  }
+
+  .staff-card_director .staff-card__body::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts-contact-form,
+  .contacts-contact-form {
+    padding: 24px 20px;
+    
+  }
+
+
+  .staff-card__body {
+    padding: 20px !important;
+  }
+}
